@@ -148,729 +148,642 @@
 						<h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2019-06-01</span>
 						</h1>
 						<section class="docs-intro">
-							<p>The Ultimate Character Controller is the most powerful character controller on the Asset
-								Store. It is a professional, kinematic character controller designed to include the
-								smoothest first and third person controls and to excel in all areas: PC, mobile,
-								console, AI, networking, and VR.
 
-								The Ultimate Character Controller was built from the ground up leveraging the best parts
-								of UFPS and the Third Person Controller, both of which have been on the Asset Store for
-								many years and have resulted in a solid code base. A no compromises approach was taken
-								during development when determining how to implement a feature: opting to have an
-								extremely polished asset instead of quickly rushing a particular feature out the door.
-
-								The Ultimate Character Controller contains many unique features not typically found in
-								other character controllers. Both first and third person view types are included
-								allowing you to seamlessly switch perspectives. The spring system allows for fluid,
-								procedural animations while in first person view. The ability system allows you to add
-								your own functionality without having to change any of the included scripts. The
-								locomotion component performs its own collision detection which enables features such as
-								gravity manipulation and per-character time scale changes. Use the editor scripts to
-								create your character and items in seconds.
-
-								The Ultimate Character Controller comes with more than 200 pages of documentation plus
-								tutorial videos to help you easily get started on your project. We can’t wait to see
-								what you create – make sure you submit your project to our Showcase!</p>
+							<p>The Ultimate Grids Engine is your ultimate solution for creating ANY GRID-Based game in
+								Unity.</p>
+							<p>It allows you to create and populate all kinds of regular and semi-regular grids,
+								including rectangular, hexagonal and isometric grids quickly and effortless. Includes a
+								robust grid entities and tiles system, advanced grid-movement, A* path finding,
+								character controllers, interactive objects and everything you need to create your own
+								grid-based game.</p>
+							<p>Anything is possible, from tactics games like Into the Breach and Advanced Wars, to
+								puzzle games like Monument Valley and Tetris, through roguelikes/lites such as Crypt of
+								the NecroDancer, verby nouns like Crossy Road or even match 3 like Candy Crush, and
+								really any game where you need a Grid of any kind and Entities to move on it.
+							</p>
+							<p>It is the best framework for grid based games out there, whether you're new to Unity, or
+								an experienced developer. Easy to use, packed with features, built with good practices
+								at its core, and constantly updated, it's the ultimate tool to get yourself a head start
+								and have fun creating your game.
+							</p>
 						</section>
 						<!--//docs-intro-->
 					</header>
 				</article>
-			<!--//docs-code-block-->
-			<!--//section-->
-
-			<article class="docs-article" id="section-2">
-				<header class="docs-header">
-					<h1 class="docs-heading">Time Manager</h1>
-					<section class="docs-intro">
-						<p>The Time Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-2-1">
-					<h5>The Time Manager Component:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the time manager component</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-2-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
-								<td>The current ingame time, in an standard time format</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
-								<td>Triggers an event everytime the hour value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
-								<td>Triggers an event everytime the day value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
-								<td>Triggers an event whenever the time curves second key is</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
-								<td>Triggers an event whenever the time curves fourth key is</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<section class="docs-section" id="item-2-3"></section>
-				<h4>API</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
-					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
+				<!--//docs-code-block-->
 				<!--//section-->
-			</article>
-			<!--//docs-article-->
 
-			<article class="docs-article" id="section-3">
-				<header class="docs-header">
-					<h1 class="docs-heading">Season Manager</h1>
-					<section class="docs-intro">
-						<p>The Season Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">Time Manager</h1>
+						<section class="docs-intro">
+							<p>The Time Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-2-1">
+						<h5>The Time Manager Component:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the time manager component</figcaption>
+						</figure>
 					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-3-1">
-					<h5>The Season Manager Component:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/SeasonManager.PNG" data-title="Season Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/SeasonManager.PNG" alt="" style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the season manager component</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-3-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seasons</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Random Seasons</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
+					<section class="docs-section" id="item-2-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
 
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Camera</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
 
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Season Events/a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
+									<td>The current ingame time, in an standard time format</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
+									<td>Triggers an event everytime the hour value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
+									<td>Triggers an event everytime the day value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
+									<td>Triggers an event whenever the time curves second key is</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
+									<td>Triggers an event whenever the time curves fourth key is</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-4">
-				<header class="docs-header">
-					<h1 class="docs-heading">Celestial Manager</h1>
-					<section class="docs-intro">
-						<p>The Time Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
+					<!--//table-responsive-->
 					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-4-1">
-					<h5>The Celestial Manager Component:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the time component</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-4-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
+					<section class="docs-section" id="item-2-3"></section>
+					<h4>API</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
 
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
 
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
-								<td>The current ingame time, in an standard time format</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
-								<td>Triggers an event everytime the hour value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
-								<td>Triggers an event everytime the day value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
-								<td>Triggers an event whenever the time curves second key is</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
-								<td>Triggers an event whenever the time curves fourth key is</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<section class="docs-section" id="item-4-3"></section>
-				<h4>API</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-5">
-				<header class="docs-header">
-					<h1 class="docs-heading">Shader Manager</h1>
-					<section class="docs-intro">
-						<p>The Time Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-5-1">
-					<h5>The Time Manager Component:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the time component</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-5-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
-								<td>The current ingame time, in an standard time format</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
-								<td>Triggers an event everytime the hour value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
-								<td>Triggers an event everytime the day value is incremented</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
-								<td>Triggers an event whenever the time curves second key is</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
-								<td>Triggers an event whenever the time curves fourth key is</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<section class="docs-section" id="item-5-3"></section>
-				<h4>API</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
-					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-6">
-				<header class="docs-header">
-					<h1 class="docs-heading">Season Scriptable Object</h1>
-					<section class="docs-intro">
-						<p>The Time Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-6-1">
-					<h5>The Season Scriptable Object:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/SeasonScriptableObject.PNG" data-title="Time Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/SeasonScriptableObject.PNG" alt=""
-								style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the season scriptable object</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-6-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Season Name</a></th>
-								<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
-									24:00:00</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Cycle Amount</a></th>
-								<td>Adjusts the rate at which time passes</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
-								<td>The current season assets time curve</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Season Day</a></th>
-								<td>The evaluated value to lerp the skyboxes from the current time curve </td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Season Night</a></th>
-								<td>The current ingame time, in an standard time format</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<section class="docs-section" id="item-6-3"></section>
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
-					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-7">
-				<header class="docs-header">
-					<h1 class="docs-heading">Weather Scriptable Object</h1>
-					<section class="docs-intro">
-						<p>The Time Manager is the component that handles the time for the current game as well as
-							setting the blend between night and day skyboxes. When creating a new scene using the
-							Weather Magic Menu, this component is attached to an object called ‘GameManager’.
-							The Game Manager component is seperated into three parts: The time, season and celestial
-							manager.</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-7-1">
-					<h5>The Weather Scriptable Object:</h5>
-					<figure class="figure docs-figure py-3">
-						<a href="assets/images/screenshots/WeatherScriptableObject.PNG" data-title="Time Manager"
-							data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
-								src="assets/images/screenshots/WeatherScriptableObject.PNG" alt=""
-								style="width: 1200px;"></a>
-						<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
-							image displays the Weather Scriptable Object</figcaption>
-					</figure>
-				</section>
-				<section class="docs-section" id="item-7-2"></section>
-				<h4>Properties</h4>
-				<div class="table-responsive my-4">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Weather Name</a></th>
-								<td>The name of this weather asset</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Weather Weighting</a></th>
-								<td>The chance for this weather asset to occur in the season. Every additional '1'
-									increases the chance by 1 for that weather asset.</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Skybox Tint</a></th>
-								<td>The background tint of the skybox</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Unique Skybox</a></th>
-								<td>Allows you to select a new skybox asset for this weather theme</td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Image</a></th>
-								<td>The skybox image for this weather asset</td>
-							</tr>
-
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Weather Pool</a> </th>
-								<th class="theme-bg-light"><a class="theme-link">Object To Pool</a> </th>
-								<td>The prefab to pool</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link"></a> </th>
-								<th class="theme-bg-light"><a class="theme-link">Amount To Pool</a> </th>
-								<td>How many objects of the prefab do you want to instantiate. This is not at once,
-									but rather the total, which can be pooled from</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link"></a> </th>
-								<th class="theme-bg-light"><a class="theme-link">Chance To Change</a> </th>
-								<td>What is the chance for the prefab to occur</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link"></a> </th>
-								<th class="theme-bg-light"><a class="theme-link">Next To Camera</a> </th>
-								<td>Will the object be placed next to the camera (i.e. at the cameras transform)
-								</td>
-							</tr>
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link"></a> </th>
-								<th class="theme-bg-light"><a class="theme-link">Offset Amount</a> </th>
-								<td>The amount to offset the prefab in relation to the main camera </td>
-							</tr>
-
-							<tr>
-								<th class="theme-bg-light"><a class="theme-link">Connect To Vegetation Shader</a>
-								</th>
-								<td>Enable to allow access to third party shaders</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--//table-responsive-->
-				</section>
-				<section class="docs-section" id="item-7-3"></section>
-
-				<div class="callout-block callout-block-success">
-					<div class="content">
-						<h4 class="callout-title">
-							<span class="callout-icon-holder mr-1">
-								<i class="fas fa-thumbs-up"></i>
-							</span>
-							<!--//icon-holder-->
-							Tip
-						</h4>
-						<p>In order to speed up the day/night cycle, if for example your character is sleeping,
-							speed up the time multiplier in order to see a rapidly changing skybox
-						</p>
-					</div>
-					<!--//content-->
-				</div>
-				<!--//callout-block-->
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-8">
-				<header class="docs-header">
-					<h1 class="docs-heading">FAQs</h1>
-					<section class="docs-intro">
-						<p>Section intro goes here. You can list all your FAQs using the format below.</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-8-1">
-					<h2 class="section-heading">Time Manager</h2>
-					<p></p>
-					<p>Code Example: <code>npm install &lt;package&gt;</code></p>
-					<h5>Unordered List Examples:</h5>
-					<ul>
-						<li><strong class="mr-1">HTML5:</strong> <code>&lt;div id="foo"&gt;</code></li>
-						<li><strong class="mr-1">CSS:</strong> <code>#foo { color: red }</code></li>
-						<li><strong class="mr-1">JavaScript:</strong>
-							<code>console.log(&#x27;#foo\bar&#x27;);</code></li>
-					</ul>
-					<h5>Ordered List Examples:</h5>
-					<ol>
-						<li>Download lorem ipsum dolor sit amet.</li>
-						<li>Click ipsum faucibus venenatis.</li>
-						<li>Configure fermentum malesuada nunc.</li>
-						<li>Deploy donec non ante libero.</li>
-					</ol>
-					<h5>Callout Examples:</h5>
-					<div class="callout-block callout-block-info">
-
+					<div class="callout-block callout-block-success">
 						<div class="content">
 							<h4 class="callout-title">
 								<span class="callout-icon-holder mr-1">
-									<i class="fas fa-info-circle"></i>
+									<i class="fas fa-thumbs-up"></i>
 								</span>
 								<!--//icon-holder-->
-								Note
+								Tip
 							</h4>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-								<code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link
-									example</a> sit aspernatur aut odit aut fugit.</p>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
 						</div>
 						<!--//content-->
 					</div>
 					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
 
-					<div class="callout-block callout-block-warning">
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">Season Manager</h1>
+						<section class="docs-intro">
+							<p>The Season Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h5>The Season Manager Component:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/SeasonManager.PNG" data-title="Season Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/SeasonManager.PNG" alt="" style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the season manager component</figcaption>
+						</figure>
+					</section>
+					<section class="docs-section" id="item-3-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seasons</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Random Seasons</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Camera</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Season Events/a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--//table-responsive-->
+					</section>
+					<div class="callout-block callout-block-success">
 						<div class="content">
 							<h4 class="callout-title">
 								<span class="callout-icon-holder mr-1">
-									<i class="fas fa-bullhorn"></i>
+									<i class="fas fa-thumbs-up"></i>
 								</span>
 								<!--//icon-holder-->
-								Warning
+								Tip
 							</h4>
-							<p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
-								fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
-									example</a> tellus vel diam viverra elementum.</p>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
 						</div>
 						<!--//content-->
 					</div>
 					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Celestial Manager</h1>
+						<section class="docs-intro">
+							<p>The Time Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-4-1">
+						<h5>The Celestial Manager Component:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the time component</figcaption>
+						</figure>
+					</section>
+					<section class="docs-section" id="item-4-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
+									<td>The current ingame time, in an standard time format</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
+									<td>Triggers an event everytime the hour value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
+									<td>Triggers an event everytime the day value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
+									<td>Triggers an event whenever the time curves second key is</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
+									<td>Triggers an event whenever the time curves fourth key is</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--//table-responsive-->
+					</section>
+					<section class="docs-section" id="item-4-3"></section>
+					<h4>API</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="callout-block callout-block-success">
+						<div class="content">
+							<h4 class="callout-title">
+								<span class="callout-icon-holder mr-1">
+									<i class="fas fa-thumbs-up"></i>
+								</span>
+								<!--//icon-holder-->
+								Tip
+							</h4>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Shader Manager</h1>
+						<section class="docs-intro">
+							<p>The Time Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-5-1">
+						<h5>The Time Manager Component:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/TimeManager.PNG" data-title="Time Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/TimeManager.PNG" alt="" style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the time component</figcaption>
+						</figure>
+					</section>
+					<section class="docs-section" id="item-5-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">DD:HH:MM:SS</a></th>
+									<td>The current ingame time, in an standard time format</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Hour</a></th>
+									<td>Triggers an event everytime the hour value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day</a></th>
+									<td>Triggers an event everytime the day value is incremented</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Day Asset</a></th>
+									<td>Triggers an event whenever the time curves second key is</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">On Night Asset</a></th>
+									<td>Triggers an event whenever the time curves fourth key is</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--//table-responsive-->
+					</section>
+					<section class="docs-section" id="item-5-3"></section>
+					<h4>API</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Seconds In A Day</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Multiplier</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Evaluated Value</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="callout-block callout-block-success">
+						<div class="content">
+							<h4 class="callout-title">
+								<span class="callout-icon-holder mr-1">
+									<i class="fas fa-thumbs-up"></i>
+								</span>
+								<!--//icon-holder-->
+								Tip
+							</h4>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-6">
+					<header class="docs-header">
+						<h1 class="docs-heading">Season Scriptable Object</h1>
+						<section class="docs-intro">
+							<p>The Time Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-6-1">
+						<h5>The Season Scriptable Object:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/SeasonScriptableObject.PNG" data-title="Time Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/SeasonScriptableObject.PNG" alt=""
+									style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the season scriptable object</figcaption>
+						</figure>
+					</section>
+					<section class="docs-section" id="item-6-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Season Name</a></th>
+									<td>The amount of real world seconds for a day/night cycle to go from 00:00:00 to
+										24:00:00</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Cycle Amount</a></th>
+									<td>Adjusts the rate at which time passes</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Time Curve</a></th>
+									<td>The current season assets time curve</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Season Day</a></th>
+									<td>The evaluated value to lerp the skyboxes from the current time curve </td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Season Night</a></th>
+									<td>The current ingame time, in an standard time format</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--//table-responsive-->
+					</section>
+					<section class="docs-section" id="item-6-3"></section>
+					<div class="callout-block callout-block-success">
+						<div class="content">
+							<h4 class="callout-title">
+								<span class="callout-icon-holder mr-1">
+									<i class="fas fa-thumbs-up"></i>
+								</span>
+								<!--//icon-holder-->
+								Tip
+							</h4>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-7">
+					<header class="docs-header">
+						<h1 class="docs-heading">Weather Scriptable Object</h1>
+						<section class="docs-intro">
+							<p>The Time Manager is the component that handles the time for the current game as well as
+								setting the blend between night and day skyboxes. When creating a new scene using the
+								Weather Magic Menu, this component is attached to an object called ‘GameManager’.
+								The Game Manager component is seperated into three parts: The time, season and celestial
+								manager.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-7-1">
+						<h5>The Weather Scriptable Object:</h5>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/screenshots/WeatherScriptableObject.PNG" data-title="Time Manager"
+								data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/screenshots/WeatherScriptableObject.PNG" alt=""
+									style="width: 1200px;"></a>
+							<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>The above
+								image displays the Weather Scriptable Object</figcaption>
+						</figure>
+					</section>
+					<section class="docs-section" id="item-7-2"></section>
+					<h4>Properties</h4>
+					<div class="table-responsive my-4">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Weather Name</a></th>
+									<td>The name of this weather asset</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Weather Weighting</a></th>
+									<td>The chance for this weather asset to occur in the season. Every additional '1'
+										increases the chance by 1 for that weather asset.</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Skybox Tint</a></th>
+									<td>The background tint of the skybox</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Unique Skybox</a></th>
+									<td>Allows you to select a new skybox asset for this weather theme</td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Image</a></th>
+									<td>The skybox image for this weather asset</td>
+								</tr>
+
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Weather Pool</a> </th>
+									<th class="theme-bg-light"><a class="theme-link">Object To Pool</a> </th>
+									<td>The prefab to pool</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link"></a> </th>
+									<th class="theme-bg-light"><a class="theme-link">Amount To Pool</a> </th>
+									<td>How many objects of the prefab do you want to instantiate. This is not at once,
+										but rather the total, which can be pooled from</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link"></a> </th>
+									<th class="theme-bg-light"><a class="theme-link">Chance To Change</a> </th>
+									<td>What is the chance for the prefab to occur</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link"></a> </th>
+									<th class="theme-bg-light"><a class="theme-link">Next To Camera</a> </th>
+									<td>Will the object be placed next to the camera (i.e. at the cameras transform)
+									</td>
+								</tr>
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link"></a> </th>
+									<th class="theme-bg-light"><a class="theme-link">Offset Amount</a> </th>
+									<td>The amount to offset the prefab in relation to the main camera </td>
+								</tr>
+
+								<tr>
+									<th class="theme-bg-light"><a class="theme-link">Connect To Vegetation Shader</a>
+									</th>
+									<td>Enable to allow access to third party shaders</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--//table-responsive-->
+					</section>
+					<section class="docs-section" id="item-7-3"></section>
 
 					<div class="callout-block callout-block-success">
 						<div class="content">
@@ -881,150 +794,233 @@
 								<!--//icon-holder-->
 								Tip
 							</h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link
-									example</a> aenean commodo ligula eget dolor.</p>
+							<p>In order to speed up the day/night cycle, if for example your character is sleeping,
+								speed up the time multiplier in order to see a rapidly changing skybox
+							</p>
 						</div>
 						<!--//content-->
 					</div>
 					<!--//callout-block-->
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
 
-					<div class="callout-block callout-block-danger mr-1">
-						<div class="content">
-							<h4 class="callout-title">
-								<span class="callout-icon-holder">
-									<i class="fas fa-exclamation-triangle"></i>
-								</span>
-								<!--//icon-holder-->
-								Danger
-							</h4>
-							<p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut
-								tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim.
-								Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
+				<article class="docs-article" id="section-8">
+					<header class="docs-header">
+						<h1 class="docs-heading">FAQs</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Time Manager</h2>
+						<p></p>
+						<p>Code Example: <code>npm install &lt;package&gt;</code></p>
+						<h5>Unordered List Examples:</h5>
+						<ul>
+							<li><strong class="mr-1">HTML5:</strong> <code>&lt;div id="foo"&gt;</code></li>
+							<li><strong class="mr-1">CSS:</strong> <code>#foo { color: red }</code></li>
+							<li><strong class="mr-1">JavaScript:</strong>
+								<code>console.log(&#x27;#foo\bar&#x27;);</code></li>
+						</ul>
+						<h5>Ordered List Examples:</h5>
+						<ol>
+							<li>Download lorem ipsum dolor sit amet.</li>
+							<li>Click ipsum faucibus venenatis.</li>
+							<li>Configure fermentum malesuada nunc.</li>
+							<li>Deploy donec non ante libero.</li>
+						</ol>
+						<h5>Callout Examples:</h5>
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder mr-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									<code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a
+										href="#">link
+										example</a> sit aspernatur aut odit aut fugit.</p>
+							</div>
+							<!--//content-->
 						</div>
-						<!--//content-->
-					</div>
-					<!--//callout-block-->
+						<!--//callout-block-->
 
-					<h5 class="mt-5">Alert Examples:</h5>
-					<div class="alert alert-primary" role="alert">
-						This is a primary alert—check it out!
-					</div>
-					<div class="alert alert-secondary" role="alert">
-						This is a secondary alert—check it out!
-					</div>
-					<div class="alert alert-success" role="alert">
-						This is a success alert—check it out!
-					</div>
-					<div class="alert alert-danger" role="alert">
-						This is a danger alert—check it out!
-					</div>
-					<div class="alert alert-warning" role="alert">
-						This is a warning alert—check it out!
-					</div>
-					<div class="alert alert-info" role="alert">
-						This is a info alert—check it out!
-					</div>
-					<div class="alert alert-light" role="alert">
-						This is a light alert—check it out!
-					</div>
-					<div class="alert alert-dark" role="alert">
-						This is a dark alert—check it out!
-					</div>
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder mr-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Warning
+								</h4>
+								<p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
+									fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
+										example</a> tellus vel diam viverra elementum.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder mr-1">
+										<i class="fas fa-thumbs-up"></i>
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link
+										example</a> aenean commodo ligula eget dolor.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<div class="callout-block callout-block-danger mr-1">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder">
+										<i class="fas fa-exclamation-triangle"></i>
+									</span>
+									<!--//icon-holder-->
+									Danger
+								</h4>
+								<p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut
+									tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim.
+									Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<h5 class="mt-5">Alert Examples:</h5>
+						<div class="alert alert-primary" role="alert">
+							This is a primary alert—check it out!
+						</div>
+						<div class="alert alert-secondary" role="alert">
+							This is a secondary alert—check it out!
+						</div>
+						<div class="alert alert-success" role="alert">
+							This is a success alert—check it out!
+						</div>
+						<div class="alert alert-danger" role="alert">
+							This is a danger alert—check it out!
+						</div>
+						<div class="alert alert-warning" role="alert">
+							This is a warning alert—check it out!
+						</div>
+						<div class="alert alert-info" role="alert">
+							This is a info alert—check it out!
+						</div>
+						<div class="alert alert-light" role="alert">
+							This is a light alert—check it out!
+						</div>
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
 
 
-				</section>
-				<!--//section-->
-				<section class="docs-section" id="item-8-1">
-					<h2 class="section-heading">Section Item 3.1 <small>(FAQ Category One)</small></h2>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?
-					</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-						consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-						arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-						pede mollis pretium.</p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam
-						tortor?</h5>
-					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
-						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
-					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-						id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
-					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
-						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
-						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
-						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-				</section>
-				<!--//section-->
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Section Item 3.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?
+						</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+							ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+							consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+							arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+							pede mollis pretium.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam
+							tortor?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
 
-				<section class="docs-section" id="item-8-2">
-					<h2 class="section-heading">Section Item 3.2 <small>(FAQ Category Two)</small></h2>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?
-					</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-						consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-						arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-						pede mollis pretium.</p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam
-						tortor?</h5>
-					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
-						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
-					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-						id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
-					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
-						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
-						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
-						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-				</section>
-				<!--//section-->
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Section Item 3.2 <small>(FAQ Category Two)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?
+						</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+							ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+							consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+							arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+							pede mollis pretium.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam
+							tortor?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
 
-				<section class="docs-section" id="item-8-3">
-					<h2 class="section-heading">Section Item 3.3 <small>(FAQ Category Three)</small></h2>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo
-						vel fermentum?</h5>
-					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
-						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
-					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-						id, metus. Nullam accumsan lorem in dui. </p>
-					<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
-					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
-						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
-						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
-						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-				</section>
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
+					<section class="docs-section" id="item-8-3">
+						<h2 class="section-heading">Section Item 3.3 <small>(FAQ Category Three)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo
+							vel fermentum?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
 
-			<footer class="footer">
-				<div class="container text-center py-5">
-					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by
-						<a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying
-							Riley</a> for developers</small>
-					<ul class="social-list list-unstyled pt-4 mb-0">
-						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-					</ul>
-					<!--//social-list-->
-				</div>
-			</footer>
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+						<small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by
+							<a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying
+								Riley</a> for developers</small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+					</div>
+				</footer>
+			</div>
 		</div>
-	</div>
 	</div>
 	<!--//docs-wrapper-->
 
